@@ -1,0 +1,436 @@
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+	background-color: #efefef;
+	overflow: hidden;
+}
+html {
+	overflow: visible;
+}
+.loading {
+	z-index: 9999;
+}
+/* start personal */
+.personal {
+	margin-top: 60px;
+	background-color: #efefef;
+}
+.personal h1.phead {
+	font-size: 55px;
+	margin: 0 auto;
+	font-weight: bold;
+	text-shadow: 3px 3px 10px #19253d,5px 5px 10px #19253d;
+}
+.personal h1.phead span {
+	cursor: pointer;
+}
+.personal h4{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color: #19253d;
+}
+.personal p {
+	font-weight: lighter;
+	font-size: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+/* end personal */
+/* start info */
+.info aside {
+	background-color: #19253d;
+	color: #fff;
+}
+.info aside h3 {
+	margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    font-weight: lighter;
+    font-size: 38px;
+    letter-spacing: 1px
+}
+.info .side aside i {
+	font-size: 30px;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+.info aside p{
+	margin-top: 15px;
+	padding-bottom: 35px;
+	font-size: 22px;
+	font-family: 'Passion One', cursive;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+.info .side aside i:hover,
+.info .side aside i:hover + p,
+.info .side aside p:hover {
+	color: #ccc;
+}
+.info article {
+	background-color: #e0dcdb;
+	background: -webkit-linear-gradient(90deg, #e0dcdb 30% , #d8d4d1 30%);
+    background: -o-linear-gradient(90deg, #e0dcdb 30% , #d8d4d1 30%);
+	background: -moz-linear-gradient(90deg, #e0dcdb 30% , #d8d4d1 30%);
+	background: linear-gradient(90deg, #e0dcdb 30% , #d8d4d1 30%);
+	padding: 20px 0;
+    margin-left: -30px;
+    padding-left: 30px;
+
+}
+.info article i.fa-angle-right{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	padding-left: 5px;
+	color: #fff;
+	background-color: #19253d;
+	border: 1px solid #19253d;
+	border-radius: 50%;
+	font-size: 55px;
+}
+.info article i + span {
+	font-weight: bold;
+	vertical-align: 10px;
+	font-size:25px;
+}
+.info article h4 {
+	font-weight: bold;
+	color: #19253d;
+}
+.info article p {
+	margin-bottom: 0;
+}
+.info article p > span {
+	color: #19253d;
+}
+/*start skills */
+.info .skills article {
+	margin-top: 60px
+}
+.info .skills .skills-holder {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.info article .skill {
+	width: 178px;
+	text-align: center;
+	margin-top: 10px;
+}
+.info article .skill h5 {
+	font-size: 20px;
+	margin-bottom:5px;
+}
+.info .skills .skill i {
+	font-size: 15px;
+}
+.info article .english {
+	margin-top: 20px;
+	overflow: visible;
+	text-align: center;
+}
+.info article .english span {
+	line-height: 20px;
+	vertical-align: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+
+}
+.info article .english .progress {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 0;
+	margin-left: 10px;
+	background-color: #ece8e7;
+	border-radius: 25px;
+	border: 5px;
+}
+.info article .english .progress .progress-bar {
+	background-color: #19253d;
+	border-radius: 50px;
+	color: #ece8e7;
+	font-weight: bold;
+}
+/*end skills */
+/*start projects */
+
+.info .projects article{
+	min-height: 625px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+.info .projects article ul{
+	list-style: none;
+	margin: 25px 0;
+}
+.info .projects article ul li {
+	display: inline-block;
+	border:1px solid #19253d;
+	border-radius: 10px;
+	color: #000;
+	cursor: pointer;
+	padding: 5px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 1s;
+}
+.projects article ul li:hover ,
+.projects article ul li.selected {
+	background-color: #19253d;
+	color: #ece8e7;
+}
+div.mix  {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	border:3px solid transparent;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	transition:all 1s;
+}
+div.mix:hover {
+	border-color:  #19253d;
+	box-shadow: 10px 10px 5px grey
+}
+div.mix img {
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	transition:all 1s;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+div.mix:hover img{
+	-webkit-transform: scale(0.75,0.75);
+	-moz-transform: scale(0.75,0.75);
+	-o-transform: scale(0.75,0.75);
+	transform: scale(0.8,0.8);
+
+}
+#Container .mix{
+    display: none;
+}
+.info aside a {
+	font-size: 16px;
+	font-family: 'Passion One', cursive;
+	display: block;
+	margin: 15px 0;
+	color: #fff;
+	font-weight: lighter;
+
+}
+
+.info aside a:hover
+ {
+	color: #acacac;
+	text-decoration: none;
+	
+}
+.info aside a i {
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	border:1px solid transparent;
+	display: inline-block;
+	
+
+}
+.info aside a.gp i{
+	margin-right: 8px;
+}
+.info aside a.face:hover i,
+.info aside a i.fa-facebook:hover {
+	color: #29487d
+}
+.info aside a.tw:hover i,
+.info aside a i.fa-twitter:hover {
+	color: #2FC2EF
+}
+.info aside a.gp:hover i,
+.info aside a i.fa-google-plus:hover {
+	color: #db4437
+}
+/* end info */
+
+/*start hobbies */
+.hobbies {
+	background-color: rgba(224,220,219,0.4);
+	color: #19253d;
+
+}
+.hobbies h2 {
+	font-weight: bold;
+	font-size: 45px;
+	margin:20px;
+	padding: 0;
+	position: relative;
+}
+.hobbies h2:after {
+    content: "";
+    border-bottom: 3px solid #19253d;
+    width: 127px;
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: calc(50% - 66px);
+}
+.hobbies .hobby {
+	display: inline-block;
+	height: 150px;
+}
+.hobbies .hobby span{
+	font-size: 30px;
+	padding-top:10px;
+
+}
+.hobbies .hobby i {
+	padding-top: 12px;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.hobbies .hobby i,
+.hobbies .hobby span {
+	cursor: pointer;
+}
+.hobbies .hobby i.fa-music:hover,
+.hobbies .hobby i.fa-music.select
+{
+	color: red;
+	font-size: 6em;
+	padding-top: 0;
+	-webkit-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+.hobbies .hobby i.fa-book:hover,
+.hobbies .hobby i.fa-book.select
+{
+	padding-top: 0;
+	color: black;
+	font-size: 6em;
+}
+.hobbies .hobby i.fa-code:hover,
+.hobbies .hobby i.fa-code.select
+{
+	font-size: 6em;
+	padding-top: 0;
+	-webkit-transform: rotateZ(360deg);
+	-o-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
+}
+.hobbies .hobby i.fa-plane:hover,
+.hobbies .hobby i.fa-plane.select
+{
+	-webkit-transform: translate(8px,-8px);
+	-o-transform: translate(8px,-8px);
+	-moz-transform: translate(8px,-8px);
+	transform: translate(8px,-8px);
+}
+/*end hobbies */
+
+/*start footer */
+footer {
+	background-color: #19253d;
+	color: #efefef;
+	overflow: hidden;
+}
+footer p {
+	display: inline-block;
+	font-family: 'Indie Flower', cursive;
+	margin: 20px 0;
+}
+footer span {
+	display: inline-block;
+	margin-top: 35px;
+	float: right;
+	font-family:  'Pacifico', cursive;
+	font-size: 25px;
+	color: black
+}
+
+footer p a {
+	color: red;
+	font-family: 'Indie Flower', cursive;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s
+}
+footer p a:hover {
+	text-decoration: none;
+}
+footer p i {
+	vertical-align: 0;
+	color: red;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite; 
+}
+@-webkit-keyframes pulse {
+	from{
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+	to {
+		-webkit-transform: scale(1.1,1.1);
+		transform: scale(1.1,1.1);
+
+	}
+
+}
+@keyframes pulse {
+	from{
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+	to {
+		-webkit-transform: scale(1.1,1.1);
+		transform: scale(1.1,1.1);
+
+	}
+
+}
+@media(max-width: 750px){
+    article{
+        margin-left: initial !important;
+    }
+    .projects ul li:last-child{
+        margin: 10px auto auto 30px;
+    }
+    .projects .mix {
+        margin: 10px auto;
+    }
+    .hobbies h2 {
+	font-weight: bold;
+        font-size: 35px;
+    }
+    .hobbies i {
+        font-size: 4em;
+    }
+    .hobbies .hobby span{
+	font-size: 20px;
+    }
+}
